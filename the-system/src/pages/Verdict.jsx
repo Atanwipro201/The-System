@@ -4,7 +4,7 @@ import Test from "../components/Test";
 import Punishment from "../components/punishment";
 import '../App.css';
 //in the future 
-const apiLink ="https://the-system-6g4y07zlw-atanwipro201s-projects.vercel.app/get-verdict"//"https://localhost:30000/get-verdict"//for localdeployment
+const apiLink ="https://the-system-fdop.onrender.com/get-verdict"//"https://localhost:30000/get-verdict"//for localdeployment
   
 export default function Verdict() {
     const [data, setData] = React.useState({ verdict: " ",done:false,loading:false });

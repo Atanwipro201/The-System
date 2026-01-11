@@ -1,0 +1,20 @@
+{
+  "name": "the-systems-backend",
+  "version": "1.0.0",
+  "description": "the backend powering the AI behing the arising system",
+  "license": "ISC",
+  "author": "Aryan Tanwani",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "openai": "^6.16.0"
+  }
+}

@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.send({ verdict: `workout:${workout} and productivity${productivity}` });
 });
 
-app.get("/get-verdict", async (req, res) => {
+app.post("/get-verdict", async (req, res) => {
   console.log("Received request with query:", req.query);
   const workout = req.query.workout || true;
   const productivity = req.query.productivity || 6;

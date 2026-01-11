@@ -3,8 +3,8 @@ import axios from "axios";
 import Test from "../components/Test";
 import Punishment from "../components/punishment";
 import '../App.css';
-import Loading from "../components/Loading";
-
+//in the future 
+const apiLink ="https://the-system-6g4y07zlw-atanwipro201s-projects.vercel.app"
   
 export default function Verdict() {
     const [data, setData] = React.useState({ verdict: " ",done:false,loading:false });
@@ -14,7 +14,7 @@ export default function Verdict() {
     async function fetchVerdict() {
         setData({ ...data, loading: true });
         try {
-            const response = await axios.get("http://localhost:3000/get-verdict", {
+            const response = await axios.get(apiLink+"/get-verdict", {
                 params: { workout: input.workout, productivity: input.productivity },
               });
         

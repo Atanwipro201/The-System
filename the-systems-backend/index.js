@@ -53,5 +53,5 @@ app.get("/get-verdict", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`your story begins from http://localhost:${PORT}`);
+  console.log(`your story begins from port: ${PORT}`);
 });
